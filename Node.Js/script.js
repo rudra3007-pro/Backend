@@ -1,9 +1,9 @@
 const fs = require('node:fs');
 
-fs.writeFile("hi.txt","hello",function(err){
-    if(err) console.log(err);
-    else console.log("Done")
-})
+// fs.writeFile("hi.txt","hello",function(err){
+//     if(err) console.log(err);
+//     else console.log("Done")
+// })
 
 // fs.appendFile("hi.txt","Kaise hooo",function(err){
 //     if(err) console.log(err);
@@ -19,5 +19,10 @@ fs.writeFile("hi.txt","hello",function(err){
 //     if(err) console.log(err);
 //     else console.log("Done")
 // })
+
+fs.rename("begin.txt","intro.txt",function(err){
+    if(err) console.log(err.message);
+    else console.log("Done");
+})
 
 
